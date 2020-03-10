@@ -1,0 +1,411 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FerreSoft.UI.WF
+</name>
+</assembly>
+<members>
+<member name="T:FerreSoft.UI.WF.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.Brisbanetanks_Tools_Hand_Drill_Machine">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.Brisbanetanks_Tools_Wrench">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.button_1">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.button_10">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.button_2">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.button_3">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.button_4">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.button_5">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.button_6">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.button_7">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.button_8">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.close_window">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.construction_and_tools">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.hardware">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.menu">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.minimize">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.Pixelkit_Swanky_Outlines_08_Wrench">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.remove">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.Rob_Sanders_Gear_Adjustable_Wrench">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.screwdriver">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.sound4">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.spatula">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.tools">
+<summary>
+  Busca un recurso adaptado de tipo System.Byte[].
+</summary>
+</member>
+<member name="P:FerreSoft.UI.WF.My.Resources.Resources.window">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.ArticuloDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.CategoriaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.ClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.CompraSuplidoresDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.ConduceDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.DetalleCompraSuplidoresDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.DetalleFacturaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.EmpleadoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.FacturaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.SuplidoresDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.UsuarioSistemaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.ArticuloRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.CategoriaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.ClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.CompraSuplidoresRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.ConduceRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.DetalleCompraSuplidoresRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.DetalleFacturaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.EmpleadoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.FacturaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.SuplidoresRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.UsuarioSistemaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.ArticuloRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.CategoriaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.ClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.CompraSuplidoresRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.ConduceRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.DetalleCompraSuplidoresRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.DetalleFacturaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.EmpleadoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.FacturaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.SuplidoresRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSet.UsuarioSistemaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.ArticuloTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.CategoriaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.ClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.CompraSuplidoresTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.ConduceTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.DetalleCompraSuplidoresTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.DetalleFacturaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.EmpleadoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.FacturaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.SuplidoresTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.UsuarioSistemaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FerreSoft.UI.WF.FerreSoft_BDDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FerreSoft.UI.WF.FerreSoft_BDDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FerreSoft.UI.WF.FerreSoft_BDDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.UpdateAll(FerreSoft.UI.WF.FerreSoft_BDDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FerreSoft.UI.WF.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

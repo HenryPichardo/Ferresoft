@@ -1,0 +1,11 @@
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\bin\Debug\FerreSoft.UI.WF.exe.config
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\bin\Debug\FerreSoft.UI.WF.exe
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\bin\Debug\FerreSoft.UI.WF.pdb
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\bin\Debug\FerreSoft.UI.WF.xml
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\obj\Debug\FerreSoft.UI.WF.vbprojAssemblyReference.cache
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\obj\Debug\FerreSoft.UI.WF.Home.resources
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\obj\Debug\FerreSoft.UI.WF.Resources.resources
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\obj\Debug\FerreSoft.UI.WF.vbproj.GenerateResource.cache
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\obj\Debug\FerreSoft.UI.WF.exe
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\obj\Debug\FerreSoft.UI.WF.xml
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSoft.UI.WF\obj\Debug\FerreSoft.UI.WF.pdb

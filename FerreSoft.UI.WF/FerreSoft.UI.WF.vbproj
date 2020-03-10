@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1734E6C5-AB7C-4DB2-B58C-B27BECFDAA73}</ProjectGuid>
+    <ProjectGuid>{64472E65-5FFA-45FE-AD12-D4C7F0199852}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>FerreSoft.UI.WF.My.MyApplication</StartupObject>
     <RootNamespace>FerreSoft.UI.WF</RootNamespace>
@@ -73,11 +73,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="FerreSoft_BDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FerreSoft_BDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,14 +102,28 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="FerreSoft_BDDataSet.xsc">
+      <DependentUpon>FerreSoft_BDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FerreSoft_BDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FerreSoft_BDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FerreSoft_BDDataSet.xss">
+      <DependentUpon>FerreSoft_BDDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -117,14 +136,76 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FerreSoft.BLL\FerreSoft.BLL.vbproj">
-      <Project>{b43fd78b-ce9c-43bd-8475-f928f5dde879}</Project>
-      <Name>FerreSoft.BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FerreSotf.Entities\FerreSoft.Entities.vbproj">
-      <Project>{3a12b512-e620-458f-af17-4a874af8799a}</Project>
-      <Name>FerreSoft.Entities</Name>
-    </ProjectReference>
+    <None Include="Resources\Brisbanetanks-Tools-Hand-Drill-Machine.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brisbanetanks-Tools-Wrench.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\construction-and-tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hardware.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pixelkit-Swanky-Outlines-08-Wrench.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rob-Sanders-Gear-Adjustable-Wrench.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screwdriver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spatula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_10.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

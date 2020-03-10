@@ -1,0 +1,10 @@
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSotf.Entities\bin\Debug\FerreSoft.Entities.dll.config
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSotf.Entities\bin\Debug\FerreSoft.Entities.dll
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSotf.Entities\bin\Debug\FerreSoft.Entities.pdb
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSotf.Entities\bin\Debug\FerreSoft.Entities.xml
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSotf.Entities\obj\Debug\FerreSoft.Entities.vbprojAssemblyReference.cache
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSotf.Entities\obj\Debug\FerreSoft.Entities.Resources.resources
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSotf.Entities\obj\Debug\FerreSoft.Entities.vbproj.GenerateResource.cache
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSotf.Entities\obj\Debug\FerreSoft.Entities.dll
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSotf.Entities\obj\Debug\FerreSoft.Entities.xml
+C:\Users\Henry Pichardo\Documents\Universidad\Cuatrimestre enero-abril 2020\Proyecto II\Ferresoft\FerreSotf.Entities\obj\Debug\FerreSoft.Entities.pdb
