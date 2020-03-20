@@ -20,12 +20,13 @@ Public Class ArticuloDAL
                                "SELECT SCOPE_IDENTITY()"
             Dim cmd As New SqlCommand(sql, conex)
             'Agregamos los parametros
+            cmd.Parameters.AddWithValue("@idCategoria", articulo.IdCategoria)
             cmd.Parameters.AddWithValue("@nombre", articulo.Nombre)
             cmd.Parameters.AddWithValue("@descripcion", articulo.Descripcion)
             cmd.Parameters.AddWithValue("@precioCompra", articulo.PrecioCompra)
             cmd.Parameters.AddWithValue("@precioVenta", articulo.PrecioVenta)
             cmd.Parameters.AddWithValue("@stock", articulo.Stock)
-            cmd.Parameters.AddWithValue("@idCategoria", articulo.IdCategoria)
+
             articulo.IdArticulo = Convert.ToInt32(cmd.ExecuteScalar())
         End Using
 
@@ -43,17 +44,18 @@ Public Class ArticuloDAL
                                 Descripcion=@descripcion, 
                                 PrecioCompra=@precioCompra, 
                                 PrecioVenta=@precioVenta, 
-                                Stock=@stock WHERE ID=@idArticulo"
+                                Stock=@stock WHERE IdArticulo=@idArticulo"
 
             'Creamos el comando para ejecutar la sentencia SQL con sus parametros
             Dim cmd As New SqlCommand(sql, conex)
+            cmd.Parameters.AddWithValue("@idCategoria", articulo.IdCategoria)
             cmd.Parameters.AddWithValue("@nombre", articulo.Nombre)
             cmd.Parameters.AddWithValue("@descripcion", articulo.Descripcion)
             cmd.Parameters.AddWithValue("@precioCompra", articulo.PrecioCompra)
             cmd.Parameters.AddWithValue("@precioVenta", articulo.PrecioVenta)
             cmd.Parameters.AddWithValue("@stock", articulo.Stock)
             cmd.Parameters.AddWithValue("@idArticulo", articulo.IdArticulo)
-            cmd.Parameters.AddWithValue("@idCategoria", articulo.IdCategoria)
+
             'Ejecutamos el comando
             cmd.ExecuteNonQuery()
         End Using
@@ -67,10 +69,10 @@ Public Class ArticuloDAL
             conex.Open()
 
             'Creamos la sentencia SQL
-            Dim sql As String = "DELETE FROM Articulo WHERE ID=@IdArticulo"
+            Dim sql As String = "DELETE FROM Articulo WHERE IdArticulo=@idArticulo"
             'Creamos el comando
             Dim cmd As New SqlCommand(sql, conex)
-            cmd.Parameters.AddWithValue("@IdArticulo", id)
+            cmd.Parameters.AddWithValue("@idArticulo", id)
 
             SeElimino = cmd.ExecuteNonQuery() > 0
         End Using
@@ -122,9 +124,9 @@ Public Class ArticuloDAL
         Using conex As New SqlConnection(m_CadenaConexion)
             conex.Open()
 
-            Dim sql As String = "SELECT * FROM Articulo Where ID=@IdArticulo"
+            Dim sql As String = "SELECT * FROM Articulo Where IdArticulo=@idArticulo"
             Dim cmd As New SqlCommand(sql, conex)
-            cmd.Parameters.AddWithValue("@IdArticulo", id)
+            cmd.Parameters.AddWithValue("@idArticulo", id)
             Dim reader As SqlDataReader = cmd.ExecuteReader()
             If reader.Read() Then
                 articulo = ConvertToObject(reader)
@@ -140,9 +142,9 @@ Public Class ArticuloDAL
         Using conex As New SqlConnection(m_CadenaConexion)
             conex.Open()
 
-            Dim sql As String = "SELECT COUNT(*) FROM Articulo WHERE ID=@IdArticulo"
+            Dim sql As String = "SELECT COUNT(*) FROM Articulo WHERE IdArticulo=@idArticulo"
             Dim cmd As New SqlCommand(sql, conex)
-            cmd.Parameters.AddWithValue("@IdArticulo", id)
+            cmd.Parameters.AddWithValue("@idArticulo", id)
             numRegistros = Convert.ToInt32(cmd.ExecuteScalar())
         End Using
 
@@ -154,7 +156,7 @@ Public Class ArticuloDAL
     Private Shared Function ConvertToObject(reader As IDataReader) As ArticuloEntity
         Dim articulo As New ArticuloEntity()
 
-        articulo.IdArticulo = Convert.ToInt32(reader("ID"))
+        articulo.IdArticulo = Convert.ToInt32(reader("IdArticulo"))
         articulo.IdCategoria = Convert.ToInt32(reader("IdCategoria"))
         articulo.Nombre = Convert.ToString(reader("Nombre"))
         articulo.Descripcion = Convert.ToString(reader("Descripcion"))

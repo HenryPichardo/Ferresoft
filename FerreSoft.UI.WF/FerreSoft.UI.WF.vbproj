@@ -78,13 +78,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FerreSoft_BDDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Home.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home.Designer.vb">
-      <DependentUpon>Home.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="General.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -102,9 +96,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>

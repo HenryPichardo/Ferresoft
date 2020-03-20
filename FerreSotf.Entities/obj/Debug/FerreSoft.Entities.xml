@@ -22,5 +22,270 @@ FerreSoft.Entities
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.ArticuloDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.CategoriaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.ClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.CompraSuplidoresDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.ConduceDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.DetalleCompraSuplidoresDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.DetalleFacturaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.EmpleadoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.FacturaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.SuplidoresDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.UsuarioSistemaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.ArticuloRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.CategoriaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.ClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.CompraSuplidoresRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.ConduceRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.DetalleCompraSuplidoresRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.DetalleFacturaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.EmpleadoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.FacturaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.SuplidoresRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.UsuarioSistemaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.ArticuloRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.CategoriaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.ClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.CompraSuplidoresRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.ConduceRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.DetalleCompraSuplidoresRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.DetalleFacturaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.EmpleadoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.FacturaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.SuplidoresRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSet.UsuarioSistemaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.ArticuloTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.CategoriaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.ClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.CompraSuplidoresTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.ConduceTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.DetalleCompraSuplidoresTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.DetalleFacturaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.EmpleadoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.FacturaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.SuplidoresTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.UsuarioSistemaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FerreSoft.Entities.FerreSoft_BDDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FerreSoft.Entities.FerreSoft_BDDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FerreSoft.Entities.FerreSoft_BDDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.UpdateAll(FerreSoft.Entities.FerreSoft_BDDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:FerreSoft.Entities.FerreSoft_BDDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>

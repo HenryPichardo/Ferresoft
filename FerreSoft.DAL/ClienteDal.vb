@@ -16,17 +16,18 @@ Public Class ClienteDAL
         Using conex As New SqlConnection(m_CadenaConexion)
             conex.Open()
             'Creamos la sentencia SQL para insercion del registro
-            Dim sql As String = "INSERT INTO Cliente (Nombre, Apellidos, Cedula, Direccion, Telefono, Email) " &
-                                "VALUES (@nombre, @apellidos, @cedula, @direccion, @telefono, @email) " &
+            Dim sql As String = "INSERT INTO Cliente (Nombre, Apellido, Cedula, Direccion, Telefono, Whatsapp, Email) " &
+                                "VALUES (@nombre, @apellido, @cedula, @direccion, @telefono, @whatsapp, @email) " &
                                 "SELECT SCOPE_IDENTITY()"
 
             'Creamos el comando que ejecutara la sentencia SQL con sus correspondientes parametros
             Dim cmd As New SqlCommand(sql, conex)
             cmd.Parameters.AddWithValue("@nombre", cliente.Nombre)
-            cmd.Parameters.AddWithValue("@apellidos", cliente.Apellidos)
+            cmd.Parameters.AddWithValue("@apellido", cliente.Apellido)
             cmd.Parameters.AddWithValue("@cedula", cliente.Cedula)
             cmd.Parameters.AddWithValue("@direccion", cliente.Direccion)
             cmd.Parameters.AddWithValue("@telefono", cliente.Telefono)
+            cmd.Parameters.AddWithValue("@whatsapp", cliente.Whatsapp)
             cmd.Parameters.AddWithValue("@email", cliente.Email)
 
             cliente.IdCliente = Convert.ToInt32(cmd.ExecuteScalar()) 'Obtenemos el ID generado por SqlServer
@@ -40,21 +41,23 @@ Public Class ClienteDAL
 
             Dim sql As String = "UPDATE Cliente SET  " &
                                 "Nombre = @nombre, " &
-                                "Apellidos = @apellidos, " &
+                                "Apellido = @apellido, " &
                                 "Cedula = @cedula, " &
                                 "Direccion = @direccion, " &
                                 "Telefono = @telefono, " &
+                                "Whatsapp = @whatsapp, " &
                                 "Email = @email " &
-                                "WHERE ID = @IdCliente"
+                                "WHERE IdCliente = @idCliente"
 
             Dim cmd As New SqlCommand(sql, conex)
             cmd.Parameters.AddWithValue("@nombre", cliente.Nombre)
-            cmd.Parameters.AddWithValue("@apellidos", cliente.Apellidos)
+            cmd.Parameters.AddWithValue("@apellido", cliente.Apellido)
             cmd.Parameters.AddWithValue("@cedula", cliente.Cedula)
             cmd.Parameters.AddWithValue("@direccion", cliente.Direccion)
             cmd.Parameters.AddWithValue("@telefono", cliente.Telefono)
+            cmd.Parameters.AddWithValue("@whatsapp", cliente.Whatsapp)
             cmd.Parameters.AddWithValue("@email", cliente.Email)
-            cmd.Parameters.AddWithValue("@IdCliente", cliente.IdCliente)
+            cmd.Parameters.AddWithValue("@idCliente", cliente.IdCliente)
 
             cmd.ExecuteNonQuery()
         End Using
@@ -68,10 +71,10 @@ Public Class ClienteDAL
         Using conex As New SqlConnection(m_CadenaConexion)
             conex.Open()
             'Creamos la sentencia SQL
-            Dim sql As String = "DELETE FROM Cliente WHERE id=@IdCliente"
+            Dim sql As String = "DELETE FROM Cliente WHERE id=@idCliente"
             'Creamos el comando con sus parametros
             Dim cmd As New SqlCommand(sql, conex)
-            cmd.Parameters.AddWithValue("@IdCliente", id)
+            cmd.Parameters.AddWithValue("@idCliente", id)
 
             'Ejecutamos la sentencia SQL y almacenamos el resultado de la operación
             SeElimino = cmd.ExecuteNonQuery() > 0
@@ -86,7 +89,7 @@ Public Class ClienteDAL
         Using conex As New SqlConnection(m_CadenaConexion)
             conex.Open()
 
-            Dim sql As String = "SELECT ID, Nombre, Apellidos, Cedula, Direccion, Telefono, Email FROM Cliente ORDER BY Apellidos"
+            Dim sql As String = "SELECT IdCliente, Nombre, Apellido, Cedula, Direccion, Telefono, Whatsapp, Email FROM Cliente ORDER BY Apellido"
             Dim cmd As New SqlCommand(sql, conex)
             Dim reader As SqlDataReader = cmd.ExecuteReader()
 
@@ -105,7 +108,7 @@ Public Class ClienteDAL
         Using conex As New SqlConnection(m_CadenaConexion)
             conex.Open()
 
-            Dim sql As String = "SELECT ID, Nombre, Apellidos, Cedula, Direccion, Telefono, Email FROM Cliente
+            Dim sql As String = "SELECT IdCliente, Nombre, Apellido, Cedula, Direccion, Telefono, Whatsapp, Email FROM Cliente
                                 WHERE Cedula = @valor or Nombre Like '%' + @valor + '%' or Apellidos Like '%' + @valor + '%' 
                                 ORDER BY Apellidos"
             Dim cmd As New SqlCommand(sql, conex)
@@ -126,7 +129,7 @@ Public Class ClienteDAL
         Using conex As New SqlConnection(m_CadenaConexion)
             conex.Open()
 
-            Dim sql As String = "SELECT ID, Nombre, Apellidos, Cedula, Direccion, Telefono, Email FROM Cliente " &
+            Dim sql As String = "SELECT IdCliente, Nombre, Apellidos, Cedula, Direccion, Telefono, Whatsapp, Email FROM Cliente " &
                                 "WHERE Id = @IdCliente"
 
             Dim cmd As New SqlCommand(sql, conex)
@@ -153,7 +156,7 @@ Public Class ClienteDAL
 
             Dim sql As String = "SELECT Count(*) " &
                                 "FROM Cliente " &
-                                "WHERE ID = @IdCliente"
+                                "WHERE IdCliente = @IdCliente"
 
             Dim cmd As New SqlCommand(sql, conex)
             cmd.Parameters.AddWithValue("@IdCliente", id)
@@ -169,7 +172,7 @@ Public Class ClienteDAL
     Private Shared Function ConvertToObject(reader As IDataReader) As ClienteEntity
         Dim cliente As New ClienteEntity()
 
-        cliente.IdCliente = Convert.ToInt32(reader("ID"))
+        cliente.IdCliente = Convert.ToInt32(reader("IdCliente"))
         cliente.Nombre = Convert.ToString(reader("Nombre"))
         cliente.Cedula = Convert.ToString(reader("Cedula"))
         cliente.Apellidos = Convert.ToString(reader("Apellidos"))

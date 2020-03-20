@@ -121,7 +121,9 @@
     <Compile Include="CategoriaDal.vb" />
     <Compile Include="ClienteDal.vb" />
     <Compile Include="CompraSuplidoresDAL.vb" />
+    <Compile Include="ConduceDal.vb" />
     <Compile Include="EmpleadoDal.vb" />
+    <Compile Include="FacturaDal.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

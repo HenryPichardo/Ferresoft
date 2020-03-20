@@ -31,7 +31,7 @@ Public Class CategoriaDAL
 
             'Creamos la sentencia SQL para actualizar un registro
             Dim sql As String = "UPDATE Categoria Set Nombre=@nombre " &
-                                "WHERE ID=@idCategoria"
+                                "WHERE IdCategoria=@idCategoria"
             'Creamos el comando para ejecutar la sentencia SQL con sus parametros
             Dim cmd As New SqlCommand(sql, conex)
             cmd.Parameters.AddWithValue("@nombre", categoria.Nombre)
@@ -49,7 +49,7 @@ Public Class CategoriaDAL
             conex.Open()
 
             'Creamos la sentencia SQL
-            Dim sql As String = "DELETE FROM Categoria WHERE ID=@idCategoria"
+            Dim sql As String = "DELETE FROM Categoria WHERE IdCategoria=@idCategoria"
             'Creamos el comando
             Dim cmd As New SqlCommand(sql, conex)
             cmd.Parameters.AddWithValue("@idCategoria", id)
@@ -104,7 +104,7 @@ Public Class CategoriaDAL
         Using conex As New SqlConnection(m_CadenaConexion)
             conex.Open()
 
-            Dim sql As String = "SELECT * FROM Categoria Where ID=@idCategoria"
+            Dim sql As String = "SELECT * FROM Categoria Where IdCategoria=@idCategoria"
             Dim cmd As New SqlCommand(sql, conex)
             cmd.Parameters.AddWithValue("@idCategoria", id)
             Dim reader As SqlDataReader = cmd.ExecuteReader()
@@ -122,7 +122,7 @@ Public Class CategoriaDAL
         Using conex As New SqlConnection(m_CadenaConexion)
             conex.Open()
 
-            Dim sql As String = "SELECT COUNT(*) FROM Categoria WHERE ID=@idCategoria"
+            Dim sql As String = "SELECT COUNT(*) FROM Categoria WHERE IdCategoria=@idCategoria"
             Dim cmd As New SqlCommand(sql, conex)
             cmd.Parameters.AddWithValue("@idCategoria", id)
             numRegistros = Convert.ToInt32(cmd.ExecuteScalar())
@@ -136,7 +136,7 @@ Public Class CategoriaDAL
     Private Shared Function ConvertToObject(reader As IDataReader) As CategoriaEntity
         Dim categoria As New CategoriaEntity()
 
-        categoria.IdCategoria = Convert.ToInt32(reader("ID"))
+        categoria.IdCategoria = Convert.ToInt32(reader("IdCtegoria"))
         categoria.Nombre = Convert.ToString(reader("Nombre"))
 
         Return categoria
