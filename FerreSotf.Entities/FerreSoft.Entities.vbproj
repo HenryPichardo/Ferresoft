@@ -94,6 +94,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="SuplidoresEntity.vb" />
+    <Compile Include="UsuarioActivo.vb" />
     <Compile Include="UsuarioSistemaEntity.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +127,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cache\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

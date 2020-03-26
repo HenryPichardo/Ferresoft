@@ -175,7 +175,7 @@ Public Class ClienteDAL
         cliente.IdCliente = Convert.ToInt32(reader("IdCliente"))
         cliente.Nombre = Convert.ToString(reader("Nombre"))
         cliente.Cedula = Convert.ToString(reader("Cedula"))
-        cliente.Apellidos = Convert.ToString(reader("Apellidos"))
+        cliente.Apellido = Convert.ToString(reader("Apellidos"))
         cliente.Direccion = Convert.ToString(reader("Direccion"))
         cliente.Telefono = Convert.ToString(reader("Telefono"))
         cliente.Email = Convert.ToString(reader("Email"))

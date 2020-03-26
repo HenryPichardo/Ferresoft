@@ -17,25 +17,26 @@ Public Class FacturaDal
                 conex.Open()
 
                 '1. Creamos el maestro del pedido
-                Dim sqlPedido As String = "INSERT INTO Pedido (IdCliente, Fecha, SubTotal, TotalDescuento," &
+                Dim sqlPedido As String = "INSERT INTO Factura (IdCliente, IdUsuarioSistema, Fecha, SubTotal, TotalDescuento," &
                 "TotalImpuesto, Total)" &
-                "VALUES(@idCliente, @fecha, @subTotal, @totalDescuento, @totalImpuesto, @total)" &
+                "VALUES(@idCliente, IdUsuarioSistema, @fecha, @subTotal, @totalDescuento, @totalImpuesto, @total)" &
                 "SELECT SCOPE_IDENTITY()"
 
                 Using cmd As New SqlCommand(sqlPedido, conex)
                     cmd.Parameters.AddWithValue("@idCliente", factura.IdCliente)
+                    cmd.Parameters.AddWithValue("@idUsuarioSistema", factura.IdUsuarioSistema)
                     cmd.Parameters.AddWithValue("@fecha", factura.Fecha)
                     cmd.Parameters.AddWithValue("@subTotal", factura.SubTotal)
                     cmd.Parameters.AddWithValue("@totalDescuento", factura.TotalDescuento)
                     cmd.Parameters.AddWithValue("@totalImpuesto", factura.TotalImpuesto)
                     cmd.Parameters.AddWithValue("@total", factura.Total)
-                    factura.ID = Convert.ToInt32(cmd.ExecuteScalar())
+                    factura.IdFactura = Convert.ToInt32(cmd.ExecuteScalar())
                 End Using
 
                 '2. Creamos los detalles de pedido
-                Dim sqlDetallePedido As String = "INSERT INTO DetallePedido (IdPedido, IdArticulo, Cantidad, " &
+                Dim sqlDetallePedido As String = "INSERT INTO DetalleFactura (IdFactura, IdArticulo, Cantidad, " &
                                             "Precio, SubTotal, Descuento, Impuesto, Total)" &
-                                            "VALUES(@idPedido, @idArticulo, @cantidad, @precio, @subTotal," &
+                                            "VALUES(@idFactura, @idArticulo, @cantidad, @precio, @subTotal," &
                                             "@descuento, @impuesto, @total)" &
                                             "SELECT SCOPE_IDENTITY()"
 
@@ -45,7 +46,7 @@ Public Class FacturaDal
                         ' de la operacion previa, sino estos se iran agregando en la coleccion, generando un fallo
                         cmd.Parameters.Clear()
 
-                        cmd.Parameters.AddWithValue("@idPedido", factura.ID)
+                        cmd.Parameters.AddWithValue("@idFactura", detalle.IdFactura)
                         cmd.Parameters.AddWithValue("@idArticulo", detalle.IdArticulo)
                         cmd.Parameters.AddWithValue("@cantidad", detalle.Cantidad)
                         cmd.Parameters.AddWithValue("@precio", detalle.Precio)
@@ -53,7 +54,7 @@ Public Class FacturaDal
                         cmd.Parameters.AddWithValue("@descuento", detalle.Descuento)
                         cmd.Parameters.AddWithValue("@impuesto", detalle.Impuesto)
                         cmd.Parameters.AddWithValue("@total", detalle.Total)
-                        detalle.ID = Convert.ToInt32(cmd.ExecuteScalar())
+                        detalle.IdDetalleFactura = Convert.ToInt32(cmd.ExecuteScalar())
                     Next
                 End Using
             End Using
@@ -81,16 +82,17 @@ Public Class FacturaDal
                                         TotalDescuento=@totalDescuento,
                                         TotalImpuesto=@totalImpuesto, 
                                         Total=@total
-                                        WHERE ID=@idFactura"
+                                        WHERE IdFactura=@idFactura"
 
                 Using cmd As New SqlCommand(sql, conex)
                     cmd.Parameters.AddWithValue("@idCliente", factura.IdCliente)
+                    cmd.Parameters.AddWithValue("@idUsuarioSistema", factura.IdUsuarioSistema)
                     cmd.Parameters.AddWithValue("@fecha", factura.Fecha)
                     cmd.Parameters.AddWithValue("@subTotal", factura.SubTotal)
                     cmd.Parameters.AddWithValue("@totalDescuento", factura.TotalDescuento)
                     cmd.Parameters.AddWithValue("@totalImpuesto", factura.TotalImpuesto)
                     cmd.Parameters.AddWithValue("@total", factura.Total)
-                    cmd.Parameters.AddWithValue("@idFactura", factura.ID)
+                    cmd.Parameters.AddWithValue("@idFactura", factura.IdFactura)
                     cmd.ExecuteNonQuery()
                 End Using
 
@@ -100,11 +102,11 @@ Public Class FacturaDal
                     'Si es un nuevo detalle creamos la sentencia SQL para insertarlo,
                     'sino creamos la sentencia SQL para actualizarlo. Esto lo podemos 
                     'saber por el ID.
-                    If detalle.ID = 0 Then
+                    If detalle.IdDetalleFactura = 0 Then
                         'Si el ID es cero es porque es un nuevo detalle
                         sql = "INSERT INTO DetalleFactura (IdFactura, IdArticulo, Cantidad, " &
                                         "Precio, SubTotal, Descuento, Impuesto, Total)" &
-                                        "VALUES(@idPedido, @idArticulo, @cantidad, @precio, @subTotal," &
+                                        "VALUES(@idFactura, @idArticulo, @cantidad, @precio, @subTotal," &
                                         "@descuento, @impuesto, @total)" &
                                         "SELECT SCOPE_IDENTITY()"
                     Else
@@ -127,7 +129,7 @@ Public Class FacturaDal
                         ' de la operacion previa, sino estos se iran agregando en la coleccion, generando un fallo
                         cmd.Parameters.Clear()
 
-                        cmd.Parameters.AddWithValue("@idPedido", factura.ID)
+                        cmd.Parameters.AddWithValue("@idFactura", factura.IdFactura)
                         cmd.Parameters.AddWithValue("@idArticulo", detalle.IdArticulo)
                         cmd.Parameters.AddWithValue("@cantidad", detalle.Cantidad)
                         cmd.Parameters.AddWithValue("@precio", detalle.Precio)
@@ -135,11 +137,11 @@ Public Class FacturaDal
                         cmd.Parameters.AddWithValue("@descuento", detalle.Descuento)
                         cmd.Parameters.AddWithValue("@impuesto", detalle.Impuesto)
                         cmd.Parameters.AddWithValue("@total", detalle.Total)
-                        cmd.Parameters.AddWithValue("@idDetalle", detalle.ID)
+                        cmd.Parameters.AddWithValue("@idDetalle", detalle.IdDetalleFactura)
 
-                        If detalle.ID = 0 Then
+                        If detalle.IdDetalleFactura = 0 Then
                             'Es un nuevo detalle, por tanto obtenemos el ID
-                            detalle.ID = Convert.ToInt32(cmd.ExecuteScalar())
+                            detalle.IdDetalleFactura = Convert.ToInt32(cmd.ExecuteScalar())
                         Else
                             cmd.ExecuteNonQuery() 'Es una actualizacion
                         End If
@@ -220,11 +222,11 @@ Public Class FacturaDal
             conex.Open()
 
             Dim sql As String = "SELECT Count(*) " &
-                                "FROM Pedido " &
-                                "WHERE ID = @idPedido"
+                                "FROM Factura " &
+                                "WHERE IdFactura = @idFactura"
 
             Dim cmd As New SqlCommand(sql, conex)
-            cmd.Parameters.AddWithValue("@idPedido", id)
+            cmd.Parameters.AddWithValue("@idFactura", id)
 
             NumRegistros = Convert.ToInt32(cmd.ExecuteScalar())
         End Using
@@ -237,7 +239,7 @@ Public Class FacturaDal
     Private Shared Function ConvertToObject(reader As IDataReader) As FacturaEntity
         Dim factura As New FacturaEntity()
 
-        factura.ID = Convert.ToInt32(reader("ID"))
+        factura.IdFactura = Convert.ToInt32(reader("IdFactura"))
         factura.IdCliente = Convert.ToInt32(reader("IdCliente"))
         factura.Fecha = Convert.ToDateTime(reader("Fecha"))
 
@@ -246,11 +248,12 @@ Public Class FacturaDal
     Private Shared Function ConvertToObjectDetalle(reader As IDataReader) As DetalleFacturaEntity
         Dim detalle As New DetalleFacturaEntity()
 
-        detalle.ID = Convert.ToInt32(reader("ID"))
-        detalle.IdPedido = Convert.ToInt32(reader("IdPedido"))
+        detalle.IdDetalleFactura = Convert.ToInt32(reader("IdDetalleFactura"))
+        detalle.IdFactura = Convert.ToInt32(reader("IdFactura"))
         detalle.IdArticulo = Convert.ToInt32(reader("IdArticulo"))
         detalle.Cantidad = Convert.ToDecimal(reader("Cantidad"))
         detalle.Precio = Convert.ToDecimal(reader("Precio"))
+        detalle.SubTotal = Convert.ToDecimal(reader("SubTotal"))
         detalle.Descuento = Convert.ToDecimal(reader("Descuento"))
         detalle.Impuesto = Convert.ToDecimal(reader("Impuesto"))
         Return detalle 'retornamos el objeto

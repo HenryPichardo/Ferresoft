@@ -167,13 +167,12 @@ Public Class CompraSuplidoresDAL
     Private Shared Function ConvertToObject(reader As IDataReader) As CompraSuplidoresEntity
         Dim compraSuplidores As New CompraSuplidoresEntity()
 
-        compraSuplidores.IdCliente = Convert.ToInt32(reader("ID"))
-        compraSuplidores.Nombre = Convert.ToString(reader("Nombre"))
-        compraSuplidores.Cedula = Convert.ToString(reader("Cedula"))
-        compraSuplidores.Apellidos = Convert.ToString(reader("Apellidos"))
-        compraSuplidores.Direccion = Convert.ToString(reader("Direccion"))
-        compraSuplidores.Telefono = Convert.ToString(reader("Telefono"))
-        compraSuplidores.Email = Convert.ToString(reader("Email"))
+        compraSuplidores.IdCompraSuplidores = Convert.ToInt32(reader("IdCompraSuplidores"))
+        compraSuplidores.IdSuplidor = Convert.ToString(reader("IdSuplidor"))
+        compraSuplidores.IdUsuarioSistema = Convert.ToString(reader("IdUsuarioSistema"))
+        compraSuplidores.Fecha = Convert.ToString(reader("Fecha"))
+        compraSuplidores.vencimiento = Convert.ToString(reader("Vencimiento"))
+        compraSuplidores.Estado = Convert.ToString(reader("Estado"))
 
         Return compraSuplidores 'retornamos un objeto ClienteEntity
     End Function

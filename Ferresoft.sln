@@ -9,7 +9,7 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FerreSoft.DAL", "FerreSoft.
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FerreSoft.BLL", "FerreSoft.BLL\FerreSoft.BLL.vbproj", "{B43FD78B-CE9C-43BD-8475-F928F5DDE879}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FerreSoft.UI.WF", "FerreSoft.UI.WF\FerreSoft.UI.WF.vbproj", "{64472E65-5FFA-45FE-AD12-D4C7F0199852}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FerreSoft.UI.WF", "..\FerreSoftInterfaz\FerreSoft.UI.WF.vbproj", "{51F3C010-9526-4B53-B82B-E1DD7089AE17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{B43FD78B-CE9C-43BD-8475-F928F5DDE879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B43FD78B-CE9C-43BD-8475-F928F5DDE879}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B43FD78B-CE9C-43BD-8475-F928F5DDE879}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64472E65-5FFA-45FE-AD12-D4C7F0199852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64472E65-5FFA-45FE-AD12-D4C7F0199852}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64472E65-5FFA-45FE-AD12-D4C7F0199852}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64472E65-5FFA-45FE-AD12-D4C7F0199852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F3C010-9526-4B53-B82B-E1DD7089AE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F3C010-9526-4B53-B82B-E1DD7089AE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F3C010-9526-4B53-B82B-E1DD7089AE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F3C010-9526-4B53-B82B-E1DD7089AE17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
